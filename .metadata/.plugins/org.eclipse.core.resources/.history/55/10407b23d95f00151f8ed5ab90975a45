@@ -45,5 +45,6 @@ public class teste {
 	tree.inserir(4);
 	tree.inserir(5);
 	System.out.println("Maior: " + tree.getMaior());
+	System.out.println("emLargura: " + tree.emLargura());
 	}
 }
