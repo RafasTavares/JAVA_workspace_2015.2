@@ -24,4 +24,15 @@ public class teste {
 	System.out.println("Largura: " + tree.obterTodosEmLargura());
 	
 	}
+	@Test
+	public void test1() {
+	ArvoreBinariaBuscaNova<Integer> tree = new ArvoreBinariaBuscaNova<Integer>();
+	tree.inserir(1);
+	tree.inserir(2);
+	tree.inserir(3);
+	tree.inserir(4);
+	tree.inserir(5);
+	System.out.println("Calcular nivel: " + tree.calcularNivelNodo(3));
+	System.out.println("Pesquisar: " + tree.pesquisarIterativo(1));
+	}
 }
