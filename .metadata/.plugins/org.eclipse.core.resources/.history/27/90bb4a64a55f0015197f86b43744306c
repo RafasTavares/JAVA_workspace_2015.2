@@ -34,7 +34,9 @@ public class ArvoreBinariaBuscaNova<T extends Comparable<T>> {
 			return inserir(noAux, this.pai);
 		}
 	}
-
+	
+	
+	
 	private boolean inserir(NoNovo<T> noAux, NoNovo<T> pai) {
 		
 		if (pai.getElemento().compareTo(noAux.getElemento()) > 0) {
@@ -61,8 +63,9 @@ public class ArvoreBinariaBuscaNova<T extends Comparable<T>> {
 	}
 
 	
-	/*public boolean Inserir(NoNovo valor) {
 
+	
+	/*public boolean Inserir(NoNovo valor) {
 		NoNovo noAux = new NoNovo(valor);
 
 		if (this.pai == null) {
@@ -171,7 +174,6 @@ public class ArvoreBinariaBuscaNova<T extends Comparable<T>> {
 		}
 	}
 */
-
 	public boolean remover(T elemento) {
 		if (this.buscar( elemento)) {
 			this.remover(this.pai, elemento);
@@ -181,6 +183,7 @@ public class ArvoreBinariaBuscaNova<T extends Comparable<T>> {
 				} 
 		}
 	
+
 	private NoNovo<T> remover(NoNovo<T> no, T elemento) {
 		if (no == null) {
 			return null;
