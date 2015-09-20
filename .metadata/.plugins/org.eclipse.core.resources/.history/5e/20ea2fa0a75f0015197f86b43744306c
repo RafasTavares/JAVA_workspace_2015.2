@@ -1,0 +1,20 @@
+package br.com.arvoreBinariaDeBusca;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class teste {
+
+	@Test
+	public void test() {
+	ArvoreBinariaBuscaNova<Integer> tree = new ArvoreBinariaBuscaNova<Integer>();
+	
+	tree.inserir(1);
+	tree.inserir(2);
+	tree.inserir(3);
+	tree.inserir(4);
+	tree.inserir(5);
+	tree.obterTodosEmLargura();
+	}
+}
